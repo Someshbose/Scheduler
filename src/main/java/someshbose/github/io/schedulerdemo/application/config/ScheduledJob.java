@@ -13,7 +13,7 @@ public class ScheduledJob {
     private TestEventPublisher publisher;
 
     @Scheduled(fixedRate = 1000)
-    public void fixedRateSch() {
+    public void fixedRateScheduled() {
         System.out.println("A job is scheduled!!!!");
         publisher.publishEvnt(new TestEvent("Somesh"));
     }
